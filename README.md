@@ -70,19 +70,8 @@ pip install -r requirements.txt
 
 Create the Ollama config file:
 
-**Windows:**
-```cmd
-mkdir %USERPROFILE%\.ollama
-echo {"num_parallel": 4, "num_keep": 2, "num_gpu": 0} > %USERPROFILE%\.ollama\config.json
-```
+**.ollama/config.json**
 
-**Linux/Mac:**
-```bash
-mkdir -p ~/.ollama
-echo '{"num_parallel": 4, "num_keep": 2, "num_gpu": 0}' > ~/.ollama/config.json
-```
-
-**Configuration Explanation:**
 ```json
 {
   "num_parallel": 4,     // CPU threads to use
@@ -191,22 +180,6 @@ graph TD
 | Text | `.txt` | Plain text files |
 | PowerPoint | `.ppt`, `.pptx` | Slide content extraction |
 
-## ⚙️ Configuration
-
-### Ollama Config (`~/.ollama/config.json`):
-```json
-{
-  "num_parallel": 4,     // CPU threads to use
-  "num_keep": 2,         // Models to keep in memory
-  "num_gpu": 0           // Force CPU usage (0 = no GPU)
-}
-```
-
-### Environment Variables:
-```bash
-CUDA_VISIBLE_DEVICES=-1  # Disable GPU
-OLLAMA_NUM_GPU=0         # Force CPU for Ollama
-```
 
 ## 🐛 Troubleshooting
 
