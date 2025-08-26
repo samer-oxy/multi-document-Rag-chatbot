@@ -1,4 +1,4 @@
-# 🤖 GIK ChatBot - RAG Chatbot
+# RAG Chatbot
 
 A powerful Retrieval-Augmented Generation (RAG) chatbot built with LangChain, Ollama, and Streamlit that can answer questions based on your uploaded documents (PDF, DOC, TXT, PPT).
 
