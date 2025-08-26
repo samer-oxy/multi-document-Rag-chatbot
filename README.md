@@ -25,8 +25,8 @@ Before running this project, ensure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/samer-oxy/multi-document-Rag-chatbot
-cd giki-gpt
+git clone https://github.com/samer-oxy/multi-document-Rag-chatbot.git
+cd multi-document-Rag-chatbot.git
 ```
 
 ### 2. Install Ollama
@@ -111,7 +111,7 @@ chat_env\Scripts\activate  # Windows
 # source chat_env/bin/activate  # Linux/Mac
 
 # Run the application
-streamlit run giki_gpt.py
+streamlit run app.py
 ```
 
 ### 3. Use the Chatbot
@@ -124,8 +124,8 @@ streamlit run giki_gpt.py
 ## 📁 Project Structure
 
 ```
-giki-gpt/
-├── giki_gpt.py          # Main application file
+multi-document-Rag-chatbot/
+├── app.py          # Main application file
 ├── requirements.txt     # Python dependencies
 ├── chroma_db/          # Vector database (auto-created)
 ├── .streamlit/
