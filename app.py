@@ -23,7 +23,7 @@ torch.set_default_device('cpu')
 
 # Set page configuration
 st.set_page_config(
-    page_title="GIKI GPT",
+    page_title="GIK ChatBot",
     page_icon="🤖",
     layout="wide"
 )
@@ -267,9 +267,9 @@ def main():
     """, unsafe_allow_html=True)
     
     # App Title
-    st.markdown('<h1 class="main-header">🤖 GIKI GPT</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🤖 GIK ChatBot</h1>', unsafe_allow_html=True)
     
-    # Initialize GIKI GPT
+    # Initialize GIK ChatBot
     giki_gpt = GIKIGPT()
     
     # Check Ollama status
@@ -330,14 +330,14 @@ def main():
 
     # Main chat interface
     if st.session_state.documents_processed:
-        st.header("💬 Chat with GIKI GPT")
+        st.header("💬 Chat with GIK ChatBot")
         
         # Display chat history
         for message in st.session_state.chat_history:
             if message["role"] == "user":
                 st.info(f"**You:** {message['content']}")
             else:
-                st.success(f"**GIKI GPT:** {message['content']}")
+                st.success(f"**GIK ChatBot:** {message['content']}")
         
         # Chat input
         question = st.text_input("Ask a question:", key="question_input")
